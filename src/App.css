@@ -1,11 +1,18 @@
 html{
   text-align: center;
   alignment: center;
+  justify-content: center;
+  transition-property: vertical-align;
 
 }
 body{
   background: rgb(200, 100, 100);
 
+}
+
+#inputDiv{
+  justify-content: center;
+  alignment: center;
 }
 
 

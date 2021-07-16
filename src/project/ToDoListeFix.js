@@ -31,14 +31,16 @@ export default function ToDoListe() {
     return (
         <div>
             <h4>Login</h4>
-            <InputGroup className="form-group w-25">
-                <FormControl
-                    aria-label="Default"
-                    aria-describedby="inputGroup-sizing-default"
-                    value={user}
-                    onChange={e => setUser(e.target.value)}
-                />
-            </InputGroup>
+            <div className={"d-flex"} id={"inputDiv"}>
+                <InputGroup className="form-group w-25">
+                    <FormControl
+                        aria-label="Default"
+                        aria-describedby="inputGroup-sizing-default"
+                        value={user}
+                        onChange={e => setUser(e.target.value)}
+                    />
+                </InputGroup>
+            </div>
             <br/>
             {showSpinner && <Spinner size={"sm"} animation="border" variant="light"/>}
 
@@ -60,8 +62,16 @@ export default function ToDoListe() {
             <h2>To Do's</h2>
 
             <h5>Neues To Do:</h5>
-            <input type={"text"} value={newToDo.name}
-                   onChange={e => setNewToDo(old => ({...old, name: e.target.value}))}/>
+            <div className={"d-flex"} id={"inputDiv"}>
+                <InputGroup className="form-group w-25">
+                    <FormControl
+                        aria-label="Default"
+                        aria-describedby="inputGroup-sizing-default"
+                        value={newToDo.name}
+                        onChange={e => setNewToDo(old => ({...old, name: e.target.value}))}
+                    />
+                </InputGroup>
+            </div>
 
             <br/><br/>
             <h5>Fällig am:</h5>
