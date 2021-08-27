@@ -146,6 +146,8 @@ export default function ToDoListe() {
     }
 
     function loginButtonPressed() {
+        let newArray = []
+        setToDos(newArray)
         setShowSpinner(true)
         readToDos()
     }
