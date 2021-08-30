@@ -4,21 +4,6 @@ import React, {useState} from "react";
 import {Button, FormControl, InputGroup, Spinner} from "react-bootstrap";
 import {Square} from "react-bootstrap-icons";
 
-
-//InitializeFirebase
-const firebaseConfig = {
-    apiKey: "AIzaSyAKPxlXlJRVD7DwGaZ5htNGWSmlPRoR2Ls",
-    authDomain: "todoliste-5382e.firebaseapp.com",
-    databaseURL: "https://todoliste-5382e-default-rtdb.firebaseio.com",
-    projectId: "todoliste-5382e",
-    storageBucket: "todoliste-5382e.appspot.com",
-    messagingSenderId: "971203866724",
-    appId: "1:971203866724:web:f8d72416786622d473ef71",
-    measurementId: "G-VGLJMJM2H0"
-};
-firebase.initializeApp(firebaseConfig)
-
-
 export default function ToDoListe() {
     const [user, setUser] = useState()
     let [toDos, setToDos] = useState([])
