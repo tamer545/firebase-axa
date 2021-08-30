@@ -1,6 +1,6 @@
 import '../App.css';
 import React from "react";
-import {Switch, Route, Link} from "react-router-dom";
+import {Switch, Route, Redirect} from "react-router-dom";
 import Login from './Login.js'
 import Registration from './Registration.js'
 import ToDoList from "./ToDoList";
@@ -15,6 +15,9 @@ export default function Main() {
                 <Route exact path="/login" component={Login}/>
                 <Route path="/registration" component={Registration}/>
                 <Route path="/todolist" component={ToDoList}/>
+                <Route path="/">
+                    <Redirect to="/login"/>
+                </Route>
             </Switch>
 
         </div>
