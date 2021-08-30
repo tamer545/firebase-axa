@@ -23,7 +23,7 @@ export default function Login() {
                                                                        placeholder="Password"></FormControl></InputGroup>
             </div>
             <br/>
-            <Button onClick={()=> onLogin}> <a href="todolist">Login</a></Button>
+            <Button onClick={()=> onLogin}> <a href="#/todolist">Login</a></Button>
             <br/>
             <h6>Don't have an account yet? <a href="#/registration">Register</a></h6>
         </div>
