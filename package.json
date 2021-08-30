@@ -1,6 +1,6 @@
 {
+  "name": "firebase-axa",
   "homepage": "http://tamer545.github.io/todolist",
-  "name": "firebaseaxa",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
