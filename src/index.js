@@ -21,7 +21,7 @@ firebase.initializeApp(firebaseConfig)
 
 ReactDOM.render(
   <React.StrictMode>
-      <HashRouter basename="/#"><Main /></HashRouter>
+      <Main />
   </React.StrictMode>,
   document.getElementById('root')
 );

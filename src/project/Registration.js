@@ -23,7 +23,7 @@ export default function Registration() {
 
     return (
         <div>
-            <h1>Semeru</h1><br/>
+            <h1>ToDo List</h1><br/>
             <h2>Registration</h2>
             <br/>
 
@@ -81,7 +81,7 @@ export default function Registration() {
 
             <br/>
             <Button onClick={() => validate()}>Register</Button>
-            <h6>Already have an account? <a href="/login">Sign in</a></h6>
+            <h6>Already have an account? <a href="/#/login">Sign in</a></h6>
 
         </div>
     );
