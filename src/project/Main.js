@@ -18,6 +18,12 @@ export default function Main() {
                 <Route path="/">
                     <Redirect to="/login"/>
                 </Route>
+                <Route path="/login">
+                    <Redirect to="/login"/>
+                </Route>
+                <Route path="/registration">
+                    <Redirect to="/registration"/>
+                </Route>
             </Switch>
 
         </div>
