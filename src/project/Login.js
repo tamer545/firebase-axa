@@ -11,7 +11,7 @@ export default function Login() {
 
     return (
         <div>
-            <h1>Semeru</h1><br/>
+            <h1>ToDo List</h1><br/>
             <h2>Login</h2>
             <div className={"d-flex"} id={"inputDiv"}>
                 <InputGroup className={"form-group w-25"}><FormControl aria-label="Default"
