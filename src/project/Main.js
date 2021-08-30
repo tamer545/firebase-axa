@@ -12,10 +12,10 @@ export default function Main() {
     return (
         <div>
             <Switch>
-                <Route path="/login" component={Login}/>
-                <Route path="/registration" component={Registration}/>
-                <Route path="/todolist" component={ToDoList}/>
-                <Route path="/">
+                <Route path="/login" component={Login} basename={process.env.PUBLIC_URL}/>
+                <Route path="/registration" component={Registration} basename={process.env.PUBLIC_URL}/>
+                <Route path="/todolist" component={ToDoList} basename={process.env.PUBLIC_URL}/>
+                <Route path="/" basename={process.env.PUBLIC_URL}>
                     <Redirect to="/login"/>
                 </Route>
 
