@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/firebase-axa/static/css/main.48dca3b0.chunk.css",
-    "main.js": "/firebase-axa/static/js/main.7aacfec8.chunk.js",
-    "main.js.map": "/firebase-axa/static/js/main.7aacfec8.chunk.js.map",
+    "main.js": "/firebase-axa/static/js/main.c1ac57e9.chunk.js",
+    "main.js.map": "/firebase-axa/static/js/main.c1ac57e9.chunk.js.map",
     "runtime-main.js": "/firebase-axa/static/js/runtime-main.6689d013.js",
     "runtime-main.js.map": "/firebase-axa/static/js/runtime-main.6689d013.js.map",
     "static/css/2.d45d6843.chunk.css": "/firebase-axa/static/css/2.d45d6843.chunk.css",
@@ -18,6 +18,6 @@
     "static/css/2.d45d6843.chunk.css",
     "static/js/2.e8f379b3.chunk.js",
     "static/css/main.48dca3b0.chunk.css",
-    "static/js/main.7aacfec8.chunk.js"
+    "static/js/main.c1ac57e9.chunk.js"
   ]
 }
