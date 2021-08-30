@@ -4,7 +4,7 @@ import './index.css';
 import 'bootstrap/dist/css/bootstrap.min.css'
 import firebase from "firebase";
 import Main from "./project/Main";
-import {BrowserRouter} from 'react-router-dom';
+import {HashRouter} from 'react-router-dom';
 
 //InitializeFirebase
 const firebaseConfig = {
@@ -21,7 +21,7 @@ firebase.initializeApp(firebaseConfig)
 
 ReactDOM.render(
   <React.StrictMode>
-      <BrowserRouter><Main /></BrowserRouter>
+      <HashRouter><Main /></HashRouter>
   </React.StrictMode>,
   document.getElementById('root')
 );
