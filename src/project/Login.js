@@ -25,7 +25,7 @@ export default function Login() {
             <br/>
             <Button onClick={()=> onLogin}> <a href="todolist">Login</a></Button>
             <br/>
-            <h6>Don't have an account yet? <a href="registration">Register</a></h6>
+            <h6>Don't have an account yet? <a href="#/registration">Register</a></h6>
         </div>
     );
 }
