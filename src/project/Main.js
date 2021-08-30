@@ -13,10 +13,10 @@ export default function Main() {
         <div>
             <HashRouter>
                 <Switch>
-                    <Route exact path={'/login'} component={Login} basename={process.env.PUBLIC_URL}/>
-                    <Route exact path={'/registration'} component={Registration} basename={process.env.PUBLIC_URL}/>
-                    <Route exact path={'/todolist'} component={ToDoList} basename={process.env.PUBLIC_URL}/>
-                    <Route exact path={'/'} basename={process.env.PUBLIC_URL}>
+                    <Route path={'/login'} component={Login} basename={process.env.PUBLIC_URL}/>
+                    <Route path={'/registration'} component={Registration} basename={process.env.PUBLIC_URL}/>
+                    <Route path={'/todolist'} component={ToDoList} basename={process.env.PUBLIC_URL}/>
+                    <Route path={'/'} basename={process.env.PUBLIC_URL}>
                         <Redirect to="/login"/>
                     </Route>
 
