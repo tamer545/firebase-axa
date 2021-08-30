@@ -12,9 +12,9 @@ export default function Main() {
     return (
         <div>
             <Switch>
-                <Route exact path="#/login" component={Login}/>
-                <Route exact path="#/registration" component={Registration}/>
-                <Route exact path="#/todolist" component={ToDoList}/>
+                <Route path="/login" component={Login}/>
+                <Route path="/registration" component={Registration}/>
+                <Route path="/todolist" component={ToDoList}/>
                 <Route path="/">
                     <Redirect to="/login"/>
                 </Route>
