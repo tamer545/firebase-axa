@@ -81,7 +81,7 @@ export default function Registration() {
 
             <br/>
             <Button onClick={() => validate()}>Register</Button>
-            <h6>Already have an account? <a href="/#/login">Sign in</a></h6>
+            <h6>Already have an account? <a href="/firebase-axa/#/login">Sign in</a></h6>
 
         </div>
     );
