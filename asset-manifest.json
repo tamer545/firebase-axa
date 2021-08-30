@@ -1,22 +1,22 @@
 {
   "files": {
-    "main.css": "/todolist/static/css/main.48dca3b0.chunk.css",
-    "main.js": "/todolist/static/js/main.d53be70b.chunk.js",
-    "main.js.map": "/todolist/static/js/main.d53be70b.chunk.js.map",
-    "runtime-main.js": "/todolist/static/js/runtime-main.94f56875.js",
-    "runtime-main.js.map": "/todolist/static/js/runtime-main.94f56875.js.map",
-    "static/css/2.d45d6843.chunk.css": "/todolist/static/css/2.d45d6843.chunk.css",
-    "static/js/2.0ac30922.chunk.js": "/todolist/static/js/2.0ac30922.chunk.js",
-    "static/js/2.0ac30922.chunk.js.map": "/todolist/static/js/2.0ac30922.chunk.js.map",
-    "index.html": "/todolist/index.html",
-    "static/css/2.d45d6843.chunk.css.map": "/todolist/static/css/2.d45d6843.chunk.css.map",
-    "static/css/main.48dca3b0.chunk.css.map": "/todolist/static/css/main.48dca3b0.chunk.css.map",
-    "static/js/2.0ac30922.chunk.js.LICENSE.txt": "/todolist/static/js/2.0ac30922.chunk.js.LICENSE.txt"
+    "main.css": "/firebase-axa/static/css/main.48dca3b0.chunk.css",
+    "main.js": "/firebase-axa/static/js/main.d53be70b.chunk.js",
+    "main.js.map": "/firebase-axa/static/js/main.d53be70b.chunk.js.map",
+    "runtime-main.js": "/firebase-axa/static/js/runtime-main.6689d013.js",
+    "runtime-main.js.map": "/firebase-axa/static/js/runtime-main.6689d013.js.map",
+    "static/css/2.d45d6843.chunk.css": "/firebase-axa/static/css/2.d45d6843.chunk.css",
+    "static/js/2.e8f379b3.chunk.js": "/firebase-axa/static/js/2.e8f379b3.chunk.js",
+    "static/js/2.e8f379b3.chunk.js.map": "/firebase-axa/static/js/2.e8f379b3.chunk.js.map",
+    "index.html": "/firebase-axa/index.html",
+    "static/css/2.d45d6843.chunk.css.map": "/firebase-axa/static/css/2.d45d6843.chunk.css.map",
+    "static/css/main.48dca3b0.chunk.css.map": "/firebase-axa/static/css/main.48dca3b0.chunk.css.map",
+    "static/js/2.e8f379b3.chunk.js.LICENSE.txt": "/firebase-axa/static/js/2.e8f379b3.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
-    "static/js/runtime-main.94f56875.js",
+    "static/js/runtime-main.6689d013.js",
     "static/css/2.d45d6843.chunk.css",
-    "static/js/2.0ac30922.chunk.js",
+    "static/js/2.e8f379b3.chunk.js",
     "static/css/main.48dca3b0.chunk.css",
     "static/js/main.d53be70b.chunk.js"
   ]
