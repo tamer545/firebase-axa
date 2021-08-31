@@ -18,9 +18,9 @@ export default function Registration() {
         if (username.length > 2 && firstPw === password) {
             storeUser()
             console.log(username)
-            validationStatus  = 1
+            validationStatus = 1
 
-        }else{
+        } else {
             validationStatus = 0
         }
     }

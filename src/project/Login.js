@@ -1,12 +1,26 @@
 import {FormControl, InputGroup, Button} from "react-bootstrap";
-import React from "react";
+import React, {useState} from "react";
 import ToDoListe from "./ToDoList";
 import '../App.css';
+import firebase from "firebase";
 
 export default function Login() {
+    const [username, setUsername] = useState('')
 
-    function onLogin(){
+    function onLogin() {
+        readPassword()
+    }
 
+    function readPassword() {
+        // on() method
+        firebase.database().ref('users/' + user + '/toDo').on('value', (snap) => {
+            if (snap.val()) {
+                console.log("snap.val()", snap.val())
+
+            } else {
+                console.log("User existiert nicht")
+            }
+        });
     }
 
     return (
@@ -23,7 +37,7 @@ export default function Login() {
                                                                        placeholder="Password"></FormControl></InputGroup>
             </div>
             <br/>
-            <Button onClick={()=> onLogin}> <a href="/firebase-axa/#/todolist">Login</a></Button>
+            <Button onClick={() => onLogin}> <a href="/firebase-axa/#/todolist">Login</a></Button>
             <br/>
             <h6>Don't have an account yet? <a href="/firebase-axa/#/registration">Register</a></h6>
         </div>
