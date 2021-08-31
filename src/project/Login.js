@@ -7,6 +7,7 @@ import firebase from "firebase";
 export default function Login() {
     const [username, setUsername] = useState('')
     const [password, setPassword] = useState('')
+    const [pwFromDatabase, setPwFromDatabase] = useState('')
 
     function onLogin() {
         readPassword()
@@ -17,6 +18,7 @@ export default function Login() {
         firebase.database().ref('usernames/' + username + '/security').on('value', (snap) => {
             if (snap.val()) {
                 console.log("snap.val()", snap.val())
+                setPwFromDatabase(snap.val())
 
             } else {
                 console.log("User existiert nicht")
@@ -32,7 +34,8 @@ export default function Login() {
                 <InputGroup className={"form-group w-25"}>
                     <FormControl
                         aria-label="Default"
-                        placeholder="Username" value={username}
+                        placeholder="Username"
+                        value={username}
                         onChange={e => setUsername(e.target.value)}>
                     </FormControl>
                 </InputGroup>
@@ -50,7 +53,7 @@ export default function Login() {
                 </InputGroup>
             </div>
             <br/>
-            <Button onClick={() => onLogin}> <a href="/firebase-axa/#/todolist">Login</a></Button>
+            <Button onClick={() => onLogin}>Login</Button>
             <br/>
             <h6>Don't have an account yet? <a href="/firebase-axa/#/registration">Register</a></h6>
         </div>
