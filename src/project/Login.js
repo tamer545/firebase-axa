@@ -6,6 +6,7 @@ import firebase from "firebase";
 
 export default function Login() {
     const [username, setUsername] = useState('')
+    const [password, setPassword] = useState('')
 
     function onLogin() {
         readPassword()
@@ -13,7 +14,7 @@ export default function Login() {
 
     function readPassword() {
         // on() method
-        firebase.database().ref('users/' + user + '/toDo').on('value', (snap) => {
+        firebase.database().ref('usernames/' + username + '/security').on('value', (snap) => {
             if (snap.val()) {
                 console.log("snap.val()", snap.val())
 
@@ -28,13 +29,25 @@ export default function Login() {
             <h1>ToDo List</h1><br/>
             <h2>Login</h2>
             <div className={"d-flex"} id={"inputDiv"}>
-                <InputGroup className={"form-group w-25"}><FormControl aria-label="Default"
-                                                                       placeholder="Username"></FormControl></InputGroup>
+                <InputGroup className={"form-group w-25"}>
+                    <FormControl
+                        aria-label="Default"
+                        placeholder="Username" value={username}
+                        onChange={e => setUsername(e.target.value)}>
+                    </FormControl>
+                </InputGroup>
             </div>
             <br/>
             <div className={"d-flex"} id={"inputDiv"}>
-                <InputGroup className={"form-group w-25"}><FormControl aria-label="Default" type="password"
-                                                                       placeholder="Password"></FormControl></InputGroup>
+                <InputGroup className={"form-group w-25"}>
+                    <FormControl
+                        aria-label="Default"
+                        type="password"
+                        placeholder="Password"
+                        value={password}
+                        onChange={e => setPassword(e.target.value)}>
+                    </FormControl>
+                </InputGroup>
             </div>
             <br/>
             <Button onClick={() => onLogin}> <a href="/firebase-axa/#/todolist">Login</a></Button>
