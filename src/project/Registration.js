@@ -19,6 +19,7 @@ export default function Registration() {
             storeUser()
             console.log(username)
             validationStatus  = 1
+
         }else{
             validationStatus = 0
         }
