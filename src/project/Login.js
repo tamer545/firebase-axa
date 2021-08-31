@@ -10,18 +10,23 @@ export default function Login() {
     const [pwFromDatabase, setPwFromDatabase] = useState('')
 
     function onLogin() {
-        readPassword()
+
+        if (password == getPassword().password){
+            console.log("login successful")
+            this.props.history('/#/todolist');
+        }
     }
 
-    function readPassword() {
+    function getPassword() {
         // on() method
         firebase.database().ref('usernames/' + username + '/security').on('value', (snap) => {
             if (snap.val()) {
                 console.log("snap.val()", snap.val())
-                setPwFromDatabase(snap.val())
+                return snap.val()
 
             } else {
                 console.log("User existiert nicht")
+                return
             }
         });
     }
@@ -53,7 +58,7 @@ export default function Login() {
                 </InputGroup>
             </div>
             <br/>
-            <Button onClick={() => onLogin}> <a className={"buttonLink"} href="/firebase-axa/#/todolist">Login</a></Button>
+            <Button onClick={() => onLogin()}> <a className={"buttonLink"} href="/firebase-axa/#/todolist">Login</a></Button>
             <br/>
             <h6>Don't have an account yet? <a className={"normalLink"} href="/firebase-axa/#/registration">Register</a></h6>
         </div>
