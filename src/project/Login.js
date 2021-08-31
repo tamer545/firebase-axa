@@ -53,9 +53,9 @@ export default function Login() {
                 </InputGroup>
             </div>
             <br/>
-            <Button onClick={() => onLogin}>Login</Button>
+            <Button onClick={() => onLogin}> <a className={"buttonLink"} href="/firebase-axa/#/todolist">Login</a></Button>
             <br/>
-            <h6>Don't have an account yet? <a href="/firebase-axa/#/registration">Register</a></h6>
+            <h6>Don't have an account yet? <a className={"normalLink"} href="/firebase-axa/#/registration">Register</a></h6>
         </div>
     );
 }

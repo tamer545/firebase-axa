@@ -9,6 +9,29 @@ body{
   background: rgb(159, 220, 246);
 
 }
+a.buttonLink:visited {
+  text-decoration: none;
+  color: white;
+  font-weight: normal;
+}
+
+a.buttonLink:link{
+  text-decoration: none;
+  color: white;
+  font-weight: normal;
+}
+
+a.normalLink:visited {
+  text-decoration: none;
+  color: blue;
+  font-weight: normal;
+}
+
+a.normalLink:link{
+  text-decoration: none;
+  color: blue;
+  font-weight: normal;
+}
 
 #inputDiv{
   justify-content: center;
