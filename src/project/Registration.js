@@ -8,16 +8,19 @@ export default function Registration() {
     const [username, setUsername] = useState('')
     const [password, setPassword] = useState('')
     const [firstPw, setFirstPw] = useState('')
+    let validationStatus = 0
 
     function storeUser() {
         firebase.database().ref('usernames/' + username + '/security/password').set(password)
     }
 
     function validate() {
-        console.log(username)
-        if (username != null && firstPw === password) {
+        if (username.length > 2 && firstPw === password) {
             storeUser()
             console.log(username)
+            validationStatus  = 1
+        }else{
+            validationStatus = 0
         }
     }
 
